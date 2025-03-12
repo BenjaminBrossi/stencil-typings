@@ -1,0 +1,34 @@
+{
+  "name": "stencil-kebab-case-issue",
+  "version": "1.0.0",
+  "description": "Reproduction of Stencil kebab-case typings issue",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.js",
+  "es2017": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/stencil-kebab-case-issue/stencil-kebab-case-issue.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/stencil-kebab-case-issue.git"
+  },
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "build:fix": "stencil build --docs && node fix-typings.js",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "devDependencies": {
+    "@rollup/rollup-darwin-arm64": "^4.35.0",
+    "@stencil/core": "^4.0.0"
+  },
+  "license": "MIT"
+}

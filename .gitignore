@@ -1,0 +1,9 @@
+dist/
+www/
+loader/
+node_modules/
+.stencil/
+.idea/
+.vscode/
+.DS_Store
+*.log 

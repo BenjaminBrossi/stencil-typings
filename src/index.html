@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <title>Stencil Kebab Case Issue</title>
+    <script type="module" src="/build/stencil-kebab-case-issue.esm.js"></script>
+    <script nomodule src="/build/stencil-kebab-case-issue.js"></script>
+  </head>
+  <body>
+    <h1>Stencil Kebab Case Issue</h1>
+
+    <h2>Using camelCase attributes (works in TypeScript)</h2>
+    <my-component
+      firstName="John"
+      lastName="Doe"
+      productId="123"
+      originalPrice="100"
+      discountPrice="75"
+    ></my-component>
+
+    <h2>
+      Using kebab-case attributes (works at runtime but causes TypeScript
+      errors)
+    </h2>
+    <my-component
+      first-name="Jane"
+      last-name="Smith"
+      product-id="456"
+      original-price="200"
+      discount-price="150"
+    ></my-component>
+  </body>
+</html>
